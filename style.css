@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    /* change */
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+  }
+  .container {
+    display: grid;
+    width: 420px;
+    max-width: 420px;
+    height: 900px;
+    margin: 10px auto;
+    border-radius: 50px;
+    padding: 18px;
+    background-color: black;
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+    box-shadow: 5px 5px 5px 5px black;
+  }
+  
+  .upper_half {
+    background-color: black;
+    height: 150px;
+    margin: 0px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .status > img {
+    height: 18px;
+  }
+  .displayEntry {
+    font-size: 100px;
+    font-weight: 300;
+    margin-bottom: 0px;
+    max-width: 364px;
+    height: 120;
+    text-align: right;
+    margin-right: 20px;
+  }
+  .displayEntrySmall {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 0px;
+    height: 70px;
+    text-align: right;
+    margin-right: 20px;
+  }
+  
+  .lower_half {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin: 0px /* 4% 3% */;
+    align-items: center;
+  }
+  .button {
+    text-align: center;
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    justify-self: center;
+    font-size: 34px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: filter 0.3s;
+  }
+  
+  .upper_operators {
+    background-color: #a5a5a5;
+    color: black;
+  }
+  .side_operators {
+    background-color: #f1a33c;
+  }
+  
+  /* setting up zero  */
+  .numbers0 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    align-self: stretch;
+    justify-self: stretch;
+    width: 186px;
+    height: 81px;
+    border-radius: 55px;
+    justify-content: flex-start;
+    padding-left: 33px;
+  }
+  
+  /* when clicking  */
+  .button:active,
+  .button:focus {
+    filter: brightness(125%);
+  }
+  
